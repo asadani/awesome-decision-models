@@ -28,8 +28,8 @@ I have seen no independent evidence that these make money. Treat them as demos.
 
 | Paper | Summary |
 |---|---|
-| [Crash narratives at scale (2609.24052)](https://arxiv.org/abs/2609.24052) | ~500,000 Texas police crash narratives converted to probabilistic variables; F1 0.908; found 10,747 extra injury/fatal crashes per year |
-| [Edge service orchestration (2609.22753)](https://arxiv.org/abs/2609.22753) | Decision models replaced LLMs for latency-sensitive orchestration; 22.7–64.5% lower median latency |
+| [Crash narratives at scale (2609.24052)](https://arxiv.org/abs/2609.24052) | 499,500 Texas crash narratives screened, 195,857 coded with a 27-question schema; F1 0.908 against human labels; competitive with, not better than, two frontier LLMs; adds 10,747 injury/fatal crashes per year across nine factors |
+| [Edge service orchestration (2609.22753)](https://arxiv.org/abs/2609.22753) | Jev vs LLMs for latency-sensitive orchestration; 22.7–64.5% lower median latency than the fastest LLM across 33 test conditions |
 
 ## Gaps
 

@@ -31,4 +31,4 @@ Allow / block / escalate decisions are the most natural fit for decision models.
 
 - [2609.33401](https://arxiv.org/abs/2609.33401): security-judge evaluation across Jev, Laya, Decider and Bespoke Nimble
 - [2609.28940](https://arxiv.org/abs/2609.28940): decision layers for pentest agents
-- Laya's own docs report weak held-out moderation accuracy (0.530 on toxic-chat), so calibrate on your own data before relying on it here.
+- Laya's own docs report weak held-out moderation: 0.530 accuracy and macro-F1 0.400 on toxic-chat, which they call "barely above chance on a balanced split" ([BENCHMARKS.md](https://github.com/NandhaKishorM/laya/blob/main/BENCHMARKS.md), as of 04 Oct 2026). Calibrate on your own data before relying on any model here.

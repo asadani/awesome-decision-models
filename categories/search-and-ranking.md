@@ -20,4 +20,4 @@ Using Score and Noul questions to rank or grade items. Descriptions are from the
 
 - [Jev reranking is not a free win](https://x.com/GoSailGlobal/status/2100877682972258619): measured run over 33,047 catalog entries. Read before assuming a decision model beats your current ranker.
 - [jev-orderby-bench](https://github.com/yodablocks/jev-orderby-bench): measures how defensible ORDER BY rankings are, including wording invariance and ties.
-- RSI-Jev v3.0 reports reranking top-1 improved from 0.192 to 0.308 versus its own previous version (self-reported).
+- [RSI-Jev](https://github.com/Shanghua-Gao/RSI-Jev) reports hippo R@1 improving from 0.192 to 0.308 with a reranking reward in its v3.0 release, about +60% relative (self-reported, as of 04 Oct 2026).

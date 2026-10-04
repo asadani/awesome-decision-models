@@ -27,7 +27,7 @@ Descriptions are from the [awesome-jev-tools](https://github.com/v-modal/awesome
 | [pi-jev (TheoOliveira)](https://github.com/TheoOliveira/pi-jev) | Semantic tool routing for Pi |
 | [pi-typesafe-router](https://github.com/jekozyra/pi-typesafe-router) | Routes Pi work through typed decisions |
 | [duet-agent](https://github.com/dzhng/duet-agent) | Agent harness maintaining a Jev-backed routing table |
-| [layaAgent](https://github.com/vishalmysore/layaAgent) | Picks a tool, then picks arguments from extracted candidates ("extraction by choice"), with a confidence gate. Its own numbers: decides 32% of steps alone at 9.8% error |
+| [layaAgent](https://github.com/vishalmysore/layaAgent) | Picks a tool, then picks arguments from extracted candidates ("extraction by choice"), with a confidence gate. Its own numbers (as of 04 Oct 2026): decides 32% of steps alone at 9.8% error, with thresholds tuned on a 36-task dev split |
 
 ## Browser and computer-use agents
 
@@ -47,7 +47,7 @@ Descriptions are from the [awesome-jev-tools](https://github.com/v-modal/awesome
 
 | Tool | What it does |
 |---|---|
-| [Jev-Mem](https://github.com/craftsland/Jev-Mem) | Reference code for [2609.23986](https://arxiv.org/abs/2609.23986): a decision-model controller handles memory typing, routing, scoring and stopping; the LLM only synthesizes the answer. Reported on LoCoMo: 6.6× faster memory build, 36.7% lower query latency (self-reported). A second repo, [libingzheren/Jev-Mem](https://github.com/libingzheren/Jev-Mem), also appears; I haven't determined which is canonical. |
+| [Jev-Mem](https://github.com/craftsland/Jev-Mem) | Reference code for [2609.23986](https://arxiv.org/abs/2609.23986): a decision-model controller handles memory typing, routing, scoring and stopping; the LLM only synthesizes the answer. Reported on LoCoMo in the paper's abstract: 6.6× faster memory build, 36.7% lower query latency. A second repo, [libingzheren/Jev-Mem](https://github.com/libingzheren/Jev-Mem), also appears; I haven't determined which is canonical. |
 
 See also the pre-registered test in [papers.md](../papers.md#agent-memory): selecting raw turns with one decision-model call matched LLM extraction at a tight budget, but extraction won at generous budgets.
 

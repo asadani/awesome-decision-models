@@ -20,4 +20,4 @@ Tools where a decision model handles a small, frequent judgment for an individua
 
 ## Gap: file and folder organization
 
-I found no tool in the lists that uses a decision model to organize local files and folders (choosing a destination folder, flagging junk, detecting duplicates). See the discussion in the parent repo. This is the space that `decision-tools` explores.
+I found no tool in the awesome-jev-tools listing (as of 04 Oct 2026) that uses a decision model to organize local files and folders (choosing a destination folder, flagging junk, detecting duplicates). That is an absence in one list, not proof that none exists.

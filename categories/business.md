@@ -17,4 +17,4 @@ Triage, routing and screening for teams. Descriptions are from the [awesome-jev-
 
 ## Caution: people decisions
 
-Simon Willison [reports](https://simonwillison.net/2026/Sep/21/jev/) an experiment where Jev ranked one city highest and a neighboring one lowest for being a "good city," and warns against hiring uses. Biased, unexplainable scores are a poor fit for decisions about people. Keep a human in the loop and audit outcomes if you build in this area.
+Decision models return probabilities with no explanation, and none of the sources I read audits them for bias in people-related decisions. Simon Willison [describes](https://simonwillison.net/2026/Sep/21/jev/) a one-off experiment where Jev rated Cupertino the best and East Palo Alto the worst Bay Area city on a yes/no "Good city?" question. That is an anecdote, not evidence of bias in hiring. My own suggestion, not a claim from the sources: keep a human in the loop and audit outcomes if you build screening tools.

@@ -6,7 +6,7 @@ Gates, reviewers and context tools for coding workflows. Descriptions are from t
 
 | Tool | What it does |
 |---|---|
-| [jevgrep](https://github.com/dzhng/jevgrep) (`jg`) | Answers "where is X?" with relevant files and source excerpts. Walks folders, then files, then declarations, and uploads only what earlier steps didn't rule out. Its README reports 8/10 SWE-bench tasks solved either way, with ~26–29% lower total cost on a small tuned Python cohort. That is self-reported. |
+| [jevgrep](https://github.com/dzhng/jevgrep) (`jg`) | Answers "where is X?" with relevant files and source excerpts. Walks folders, then files, then declarations, and uploads only what earlier steps didn't rule out. Its [README](https://github.com/dzhng/jevgrep) reports (as of 04 Oct 2026) 8 of 10 SWE-bench tasks solved with and without it, on ten tuned Python tasks. Coding-agent cost fell from $7.62 to $5.44 (28.6%, excluding Jev's own cost); a later run including Jev's cost measured 25.8% lower total cost; a still later 0.5.0 run cut Jev cost about 59% but combined cost was 2–3% higher. All self-reported, single runs, not a speed claim. |
 | [fast-jev-compaction](https://github.com/tamaratran/fast-jev-compaction) | Claude Code: replaces the compaction summary |
 | [pi-fast-jev-compaction](https://github.com/joelhooks/pi-fast-jev-compaction) | Prunes stale tool history |
 | [fast-dev-compaction](https://github.com/leonaaardob/fast-dev-compaction) | Codex context-compaction port |

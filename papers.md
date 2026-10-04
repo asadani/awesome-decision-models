@@ -5,13 +5,13 @@ arXiv papers on typed decision / System One models, 13 so far, all published Sep
 ## Evaluation and calibration
 
 **[Evaluating and Benchmarking the System One Model Jev](https://arxiv.org/abs/2609.37647)**: Deußer, Sparrenberg, Sifa · 2026-09-29
-Evaluates Jev on 37 datasets. Reaches 95–99% accuracy on IMDB, SST-2, HellaSwag and ARC and beats competitors on most. Probabilities are well-calibrated enough for selective prediction; performance falls on low-resource languages and nuanced labels.
+Zero-shot evaluation of jev-1.13.0 on 37 datasets against Qwen3.8-27B and Gemma-4-E4B. Reaches 95–99% accuracy on IMDB, SST-2, HellaSwag and ARC and 86.7% on Belebele across 122 languages; beats Qwen on 27 of 37 datasets and Gemma on all 37. All three models degrade on low-resource languages and fine-grained or noisy labels.
 
 **[Laya as a Typed Probabilistic Assessor: An Independent Reproduction and a Preregistered Study of Calibration and Selective Escalation](https://arxiv.org/abs/2609.33843)**: Nandakishore · 2026-09-27
-Laya (ModernBERT-large) is systematically under-confident (signed gap −0.214). Temperature scaling (T=0.469) cuts ECE from 0.214 to 0.037. 20 of 22 preregistered tests were significant, but the confidence-based escalation gate missed its 10% error target on both tracks.
+Laya (ModernBERT-large) is uniformly under-confident: signed confidence-accuracy gap −0.214 and binned ECE 0.214. A single fitted temperature (T=0.469) cuts held-out ECE from 0.204 to 0.037. 20 of 22 executed confirmatory tests were significant after FDR correction (two descoped). The frozen escalation gate beat random escalation but missed its 10% accepted-error target.
 
 **[Do System One Decisions Add Up? A Study of Probabilistic Coherence](https://arxiv.org/abs/2609.33971)**: Joy · 2026-09-27
-Tests whether a decision stays consistent when broken into hierarchical steps, on Jev and English Laya over 72,000 questions. Substantial disagreement (total variation distance 0.219–0.689). Going through broad categories dropped Jev by 22.9 points and raised Laya by 21.3.
+Tests whether a decision stays consistent when broken into hierarchical steps, on Jev and English Laya (2,500 matched examples per system across TREC, CLINC150 and MASSIVE; 72,000 questions). Mean category-level total variation distance ranges 0.219–0.349 for Jev and 0.424–0.689 for Laya. On CLINC150, reconstructing through broad categories reduced Jev's accuracy by 22.9 points and raised Laya's by 21.3, with the same directions on all three datasets.
 
 ## Decision models as judges
 
@@ -45,15 +45,15 @@ Read together: Jev-Mem is the architecture claim, and the pre-registered study i
 Tests Jev, Laya, Decider and Bespoke Nimble as judges for prompt injection and harmful-request screening. Failures concentrate in particular attack groups and can hide behind good averages. Models can be confidently wrong. Separate allow/block thresholds raise automation mainly by blocking more aggressively, not by approving more.
 
 **[Calibrated Decision Models for Autonomous Penetration-Testing Harnesses](https://arxiv.org/abs/2609.28940)**: Barbosa · 2026-09-24
-Defines four decision points for pentest agents (finding adjudication, severity recalibration, agent pruning, confirmation loops). A 13-vulnerability NeuroSploit case study compares runs with and without Jev, and it proposes a domain-adapted model, Rave. This is a single small case study.
+Defines four decision points for pentest agents (finding adjudication, severity recalibration, agent pruning, confirmation loops). A NeuroSploit case study (one run with Jev, one without, against a web target with 13 vulnerabilities) shows differences in severity distribution and runtime that the authors say "motivate the architecture but do not establish statistical significance." It also proposes a domain-adapted model, Rave. Treat it as a design paper plus anecdote.
 
 ## Applications
 
 **[Calibrated Decisions at Scale: Converting Police Crash Narratives into Probabilistic Crash Variables](https://arxiv.org/abs/2609.24052)**: Rafe, Das · 2026-09-21
-Used on nearly 500,000 Texas crash narratives. F1 0.908 against human judgments and better than two frontier LLMs. Combined with existing coded data, it flagged an extra 10,747 injury and fatal crashes per year.
+Screened 499,500 Texas crash narratives and coded 195,857 with a 27-question schema. Against human labels the typed model reaches F1 0.908; per the abstract, one of two benchmarked frontier LLMs scores 0.059 higher and the other is indistinguishable from it, so it is competitive and not better. Calibration varies by model rather than by paradigm, and recalibration cut calibration error by a factor of 3.3. Adding the calibrated variables raises injury and fatal crashes attributed to nine factors by 10,747 per year.
 
 **[Replacing Large Language Models with Jev Decision Models for Low-Latency Edge Service Orchestration](https://arxiv.org/abs/2609.22753)**: Li, Wang, Gong, Lang, Yu · 2026-09-19 (rev. 09-26)
-Across 8,280 verified requests and a live system, Jev cut median decision latency by 22.7–64.5% versus the fastest LLM, held accuracy on unseen services, and stayed resilient under heavy load where LLMs failed significantly.
+Compares Jev, two self-hosted decision models and three hosted LLMs on 8,280 verified requests and a live admission path. Across 33 test conditions Jev cut median decision latency by 22.7–64.5% relative to the fastest LLM, and latency barely moved with input size, contract width or catalog size.
 
 ## Related, not decision-model-specific
 
