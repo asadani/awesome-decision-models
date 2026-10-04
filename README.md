@@ -65,3 +65,7 @@ Claims came from the linked source pages, which were downloaded and searched for
 4. [Laya reproduction (2609.33843)](https://arxiv.org/abs/2609.33843): calibration and escalation-gate failure
 5. [JEV-as-a-Judge (2609.26550)](https://arxiv.org/abs/2609.26550): the strongest case for accept-or-escalate cascades
 6. [Jev in the Wild (2609.30216)](https://arxiv.org/abs/2609.30216): what 2,170 projects actually build
+
+## License
+
+Original text in this repository is licensed under [CC BY 4.0](LICENSE). Credit Anuj Sadani and link to this repository when you reuse it. Third-party projects, quotations and data keep their own licenses; see [REFERENCES.md](REFERENCES.md).

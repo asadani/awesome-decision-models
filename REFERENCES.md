@@ -142,4 +142,4 @@ Jev and TypeSafe AI, Laya, Strands, Clef, GLiDE, Perplexity, OpenAI and other na
 
 ## This repository's own license
 
-The license for this repository's original text is not yet chosen (a `LICENSE` file will be added). Until then, treat the original text as all rights reserved by the maintainer. Third-party material keeps its own licenses as listed above.
+The original text in this repository (curation, summaries and analysis) is licensed under [CC BY 4.0](LICENSE): you may share and adapt it, including commercially, if you credit Anuj Sadani and link to this repository. This covers only the original text. Third-party material keeps its own licenses as listed above, and CC BY 4.0 does not apply to it.
