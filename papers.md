@@ -1,6 +1,6 @@
 # Papers
 
-arXiv papers on typed decision / System One models, 11 so far, all published Sept 2026. Summaries are paraphrased from the abstracts (I read the arXiv abstract pages, not the full papers). Grouped by theme.
+arXiv papers on typed decision / System One models, 13 so far, all published Sept 2026. Summaries are paraphrased from the abstracts (I read the arXiv abstract pages, not the full papers). Grouped by theme.
 
 ## Evaluation and calibration
 
@@ -28,6 +28,16 @@ Analyzes 2,170 public Jev projects from GitHub as of 2026-09-22. Finds rapid ear
 
 **[NumericJev: Jev-like LLM Numerical Decoding with Multiway Decision Trees](https://arxiv.org/abs/2609.28587)**: Ye et al. · 2026-09-23
 A training-free method that gets numeric output from any LLM with a Jev-like structured-choice interface by recursively refining a range through a multiway decision tree. On the authors' arithmetic benchmark it beats direct selection from a candidate list containing the right answer by 2.93 points. Relevant beyond numbers: it is evidence that hierarchical descent over choices can beat flat selection.
+
+## Agent memory
+
+**[Jev-Mem: System-One-Controlled Agentic Memory for Efficient AI Agents](https://arxiv.org/abs/2609.23986)**: Jiang et al. · 2026-09-21 · [code](https://github.com/craftsland/Jev-Mem)
+Splits agent memory along System 1 / System 2 lines. A decision-model control plane handles memory typing, relational organization, query routing, retrieval-budget allocation, graph traversal, candidate scoring and adaptive stopping. The LLM is invoked only for complex reasoning and answer synthesis. On LoCoMo: LLM-as-a-Judge score 0.777 (11.0% relative gain over the strongest baseline), memory construction in 158 s (6.6× faster than the fastest competitor), and average query latency 0.93 s (36.7% lower).
+
+**[When Does Selection Replace Extraction? A Pre-Registered Test of Agent Memory with a Typed Decision Model](https://arxiv.org/abs/2609.34227)**: Sharma · 2026-09-28
+Pre-registered study on held-out LoCoMo conversations and LongMemEval. At a tight budget on LoCoMo, raw turns selected by one Jev call are non-inferior to an LLM-extraction memory (bound −3.0 vs a −5-point margin), and raw turns cost 3,061× less to write. Reranking adds 17.4 points on LoCoMo and 9.1 on LongMemEval at a tight budget (3 of 30 candidates kept), but only 1.5 and 1.1 at generous budgets, where extraction systems are more accurate. That may explain why published results disagree. Jev selects as accurately as an LLM reranker at a third of the latency. Reranking lowers correct abstention.
+
+Read together: Jev-Mem is the architecture claim, and the pre-registered study is a more cautious test showing the advantage depends on the budget.
 
 ## Security
 

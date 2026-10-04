@@ -43,6 +43,14 @@ Descriptions are from the [awesome-jev-tools](https://github.com/v-modal/awesome
 | [jev-desktop](https://github.com/yikangy873-gif/jev-desktop) | Action selection for Codex Computer Use |
 | [jev-social](https://github.com/socai-io/jev-social) | Selects socai CLI operations on social media |
 
+## Agent memory
+
+| Tool | What it does |
+|---|---|
+| [Jev-Mem](https://github.com/craftsland/Jev-Mem) | Reference code for [2609.23986](https://arxiv.org/abs/2609.23986): a decision-model controller handles memory typing, routing, scoring and stopping; the LLM only synthesizes the answer. Reported on LoCoMo: 6.6× faster memory build, 36.7% lower query latency (self-reported). A second repo, [libingzheren/Jev-Mem](https://github.com/libingzheren/Jev-Mem), also appears; I haven't determined which is canonical. |
+
+See also the pre-registered test in [papers.md](../papers.md#agent-memory): selecting raw turns with one decision-model call matched LLM extraction at a tight budget, but extraction won at generous budgets.
+
 ## Loop control
 
 | Tool | What it does |

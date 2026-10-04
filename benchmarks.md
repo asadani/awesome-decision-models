@@ -24,6 +24,25 @@ Independent-looking reruns, not yet cross-checked by me:
 
 Note how much latency depends on setup: 33 ms (T4, one question) vs 484 ms p50 in a different harness. Compare only within one harness.
 
+## New entrants, vendor-reported (2026-09-30 to 10-02)
+
+**All numbers in this section come from the vendors themselves, and I found no independent reproduction of any of them.** The benchmark panels, prompts and sample sizes differ, so don't compare across rows.
+
+| Model | Claim | Source |
+|---|---|---|
+| **Clef / Clef-flash** (Cloudflare) | Median latency 38.8 ms (flash) / 209.3 ms (Clef) vs 524.1 ms for Jev. Per the post, best score on 7 of 10 benchmarks. Jev wins When2Call (80.97 vs 72.37 for Clef) and BRIGHT (47.52 vs 45.91). Examples: BANKING77 macro-F1 94.20 vs 79.74; BFCL 98.47 vs 95.75. | [Cloudflare](https://blog.cloudflare.com/clef-decision-models/) |
+| **GLiDE** (Fastino) | "Decision Index" overall 64.81 vs Jev 57.91 (+6.90). Knowledge & Reasoning 62.9 vs 51.4; Tools & Automation 83.5 vs 75.1; CLadder 88.7% vs 72.6%; CRUXEval 92.6% vs 73.0%. The Decision Index spans 38 benchmarks in five areas; the post doesn't say who built it. No latency or price given. | [Fastino](https://fastino.ai/blog/introducing-glide-the-first-thinking-decision-model) |
+| **pplx-decider-v1-27b** (Perplexity) | 85.71% vs Jev 84.51% across 11 benchmarks, 7,210 samples; biggest gap on RAGTruth (88.80% vs 77.27%). Jev wins 4 of the 11. The docs publish no benchmark table, per the summary. | [AI Weekly](https://aiweekly.co/alerts/perplexity-open-sources-27b-decider-edges-jev-on-11-test-panel) |
+| **Strands Decider** (AWS) | JevBench v1 public set: 0.723 (167/231), ECE 0.052; answers at confidence ≥0.9 are right about 95% of the time on unseen short classification tasks. 115 ms median on an RTX 3090. Ranked 3rd of 33 in the 2B class on JevBench per the blog. | [Repo](https://github.com/strands-labs/strands-decider), [blog](https://strandsagents.com/blog/introducing-strands-decider/) |
+| **llama.cpp runtime** | ~3 ms (Julia-1) to ~43 ms (OpenJev) per question | [ggml-org](https://huggingface.co/blog/ggml-org/decision-models-in-llamacpp) |
+
+Patterns worth noting:
+
+- **Every vendor reports winning against Jev on its own panel.** The margins range from 1.2 points (Perplexity) to 6.9 (Fastino), and each panel was chosen by the vendor.
+- **Jev keeps winning on a few tasks** in two independent vendor tables (When2Call and BRIGHT for Cloudflare; 4 of 11 for Perplexity). So a single "best model" is unlikely.
+- **Jev's latency figures vary by who measures.** 524 ms median (Cloudflare), 236–276 ms (Laya's docs), 756 ms (Luni dataset). Latency depends on network and region, so measure from your own deployment.
+- **Cost:** Jev's price is $0.042 / M input tokens, Perplexity's $0.04. A tweet-length summary of Cloudflare's results says Jev is 2–6× cheaper per token; the Cloudflare post itself gave no pricing in what I read, so that is unconfirmed.
+
 ## Broad independent evaluation
 
 **[Evaluating and Benchmarking the System One Model Jev (2609.37647)](https://arxiv.org/abs/2609.37647)**, 2026-09-29. 37 datasets across domains. Jev reaches 95–99% accuracy on IMDB, SST-2, HellaSwag and ARC and beats competing models on most. Its probabilities are well-calibrated enough for selective prediction. Performance drops significantly on low-resource languages and nuanced labeling, and all tested models share those limits.
