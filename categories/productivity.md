@@ -2,21 +2,21 @@
 
 Tools where a decision model handles a small, frequent judgment for an individual. Descriptions are my own words, based on each project's own GitHub description (as of 04 Oct 2026). Projects were discovered through several lists and searches (see [REFERENCES.md](../REFERENCES.md)). I have not run the tools. The License column is what GitHub reports for each repo, not legal advice.
 
-| Tool | What decision it makes |
-|---|---|
-| [unclutter](https://github.com/kitze/unclutter) | Browser extension: is this page element clutter? |
-| [jev-skip](https://github.com/valentynkit/jev-skip) | Scores YouTube sponsor-segment probability on the seek bar |
-| [PlotVeil](https://github.com/Dearest/plotveil) | Hides YouTube comments containing spoilers |
-| [typesafe-adblock](https://github.com/realZachi/typesafe-adblock) | Chrome extension: is this DOM element an ad? |
-| [jev-slop-guard](https://github.com/davertor/jev-slop-guard) | Filters low-quality posts from social feeds |
-| [JevPDF](https://github.com/kylemclaren/jevpdf) | PDF viewer highlighting lines that answer a question |
-| [HA-Jev](https://github.com/AboveColin/HA-Jev) | Home Assistant: probabilistic answers to questions about the house |
-| [minutes](https://github.com/silverstein/minutes) | Meeting-notes app with a decision model in the live voice path |
-| [jev-canvas](https://github.com/gaborishka/jev-canvas) | Voice-drawn canvas driven by eight typed questions |
-| [pagegrade](https://github.com/kitze/pagegrade) | Grades page sections for clarity and SEO |
-| [Sniff Test](https://github.com/DanRWilloughby/snifftest) | Prose linter: ten Boolean questions per paragraph |
-| [slop-grader](https://github.com/lukstei/slop-grader) | CLI grading text against custom rulesets |
-| [JevSlop](https://github.com/TKY-27/JevSlop) | Scores articles on eight axes |
+| Tool | What it does | License |
+|---|---|---|
+| [unclutter](https://github.com/kitze/unclutter) | Browser extension that removes page clutter using reusable template rules | MIT |
+| [jev-skip](https://github.com/valentynkit/jev-skip) | YouTube sponsor skipper that decides at watch time from captions and shows a probability heatmap | MIT |
+| [PlotVeil](https://github.com/Dearest/plotveil) | Blocks spoilers in YouTube comments with one yes/no decision per comment | MIT |
+| [typesafe-adblock](https://github.com/realZachi/typesafe-adblock) | Chrome extension that asks a small model whether a DOM element is an ad | MIT |
+| [jev-slop-guard](https://github.com/davertor/jev-slop-guard) | Chrome extension that scores and stamps AI-generated slop on X and LinkedIn feeds | MIT |
+| [JevPDF](https://github.com/kylemclaren/jevpdf) | PDF viewer that highlights lines matching a natural-language question | MIT |
+| [HA-Jev](https://github.com/AboveColin/HA-Jev) | Home Assistant integration: typed answers as sensors, plus actions and a conversation agent | MIT |
+| [minutes](https://github.com/silverstein/minutes) | Local-first, open-source meeting-notes tool for MCP clients | MIT |
+| [jev-canvas](https://github.com/gaborishka/jev-canvas) | Voice-and-gesture drawing on a tldraw canvas, with the model deciding actions | MIT |
+| [pagegrade](https://github.com/kitze/pagegrade) | Grades page sections for clarity, writing and on-page SEO | MIT |
+| [Sniff Test](https://github.com/DanRWilloughby/snifftest) | Prose linter that flags AI-writing tells, with countable rules and one judgment pass | MIT |
+| [slop-grader](https://github.com/lukstei/slop-grader) | Rule-based grader for text files that runs every rule against every line in parallel | MIT |
+| [JevSlop](https://github.com/TKY-27/JevSlop) | Site that rates note.com articles for AI slop (Japanese) | MIT |
 
 ## File and folder organization
 
