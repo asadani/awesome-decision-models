@@ -4,28 +4,28 @@ Allow / block / escalate decisions are the most natural fit for decision models.
 
 ## Agent permission and tool-call gates
 
-| Tool | What it does |
-|---|---|
-| [jev-guard](https://github.com/leepokai/jev-guard) | Prompt-injection and dangerous-action guard for agents |
-| [jev-axi](https://github.com/shiftynick/jev-axi) | PreToolUse gate scoring commands for destructiveness |
-| [pi-jev](https://github.com/y0usaf/pi-jev) | Tool-call gate for the Pi coding agent |
-| [pi-verdict](https://github.com/jesset/pi-verdict) | Pi permission gate using Choice decisions |
-| [pi-heed](https://github.com/Nyarlathoteppppp/pi-heed) | Checks tool calls against user intent |
-| [fx](https://github.com/vercel-labs/fx) | Coding agent with a built-in permission reviewer |
+| Tool | What it does | License |
+|---|---|---|
+| [jev-guard](https://github.com/leepokai/jev-guard) | Auto mode for coding agents: risk-scores each tool call using session context | MIT |
+| [jev-axi](https://github.com/shiftynick/jev-axi) | Agent-friendly CLI for fast calibrated judgments (pick, rate, check, rank, triage) | MIT |
+| [pi-jev](https://github.com/y0usaf/pi-jev) | Decision layer for the Pi agent: a measured tool-call gate plus an ask tool | MIT |
+| [pi-verdict](https://github.com/jesset/pi-verdict) | Minimal permission gate for Pi in the style of Claude Code auto mode | MIT |
+| [pi-heed](https://github.com/Nyarlathoteppppp/pi-heed) | Checks side-effecting tool calls in Pi against what you asked for | MIT |
+| [fx](https://github.com/vercel-labs/fx) | Unix-style coding agent from Vercel Labs; listed as having a built-in permission reviewer | Apache-2.0 |
 
 ## Software supply chain
 
-| Tool | What it does |
-|---|---|
-| [is-malicious](https://github.com/luantak/is-malicious) | Checks package source and build files |
+| Tool | What it does | License |
+|---|---|---|
+| [is-malicious](https://github.com/luantak/is-malicious) | Codebase scanner that helps avoid running malicious code | MIT |
 
 ## Content moderation
 
-| Tool | What it does |
-|---|---|
-| [Jev Moderation Bot](https://github.com/brainstormity/Jev-Moderation-Bot) | Discord bot scoring messages |
-| [mastra-jev-moderation](https://github.com/CodeAlive-AI/mastra-jev-moderation) | Mastra input processor |
-| [jev-spam-eval](https://github.com/bitnovus/jev-spam-eval) | Zero-shot spam classification evaluation |
+| Tool | What it does | License |
+|---|---|---|
+| [Jev Moderation Bot](https://github.com/brainstormity/Jev-Moderation-Bot) | Discord moderation bot that scores messages (repo has no description) | MIT |
+| [mastra-jev-moderation](https://github.com/CodeAlive-AI/mastra-jev-moderation) | Input-moderation processor for Mastra agents, in a single file | MIT |
+| [jev-spam-eval](https://github.com/bitnovus/jev-spam-eval) | Zero-shot spam filtering with yes/no questions, compared against TF-IDF baselines | MIT |
 
 ## Research
 

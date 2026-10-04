@@ -58,7 +58,7 @@ Patterns worth noting:
 | Laya's own docs say both checkpoints **ship over-confident** and need temperature fitting | [BENCHMARKS.md](https://github.com/NandhaKishorM/laya/blob/main/BENCHMARKS.md) |
 | The frozen escalation gate beat random escalation but **missed its 10% accepted-error target** | [2609.33843](https://arxiv.org/abs/2609.33843) |
 | layaAgent at its tuned gate decides 32% of steps alone at 9.8% error; `goal_met` AUROC 0.71. Thresholds were chosen on a 36-task dev split, a small sample | [layaAgent README](https://github.com/vishalmysore/layaAgent) |
-| Independent OOD calibration test: 900 rule-generated tickets plus 3 public benchmarks | [jev-ood-calibration](https://github.com/scienthoon/jev-ood-calibration) (listed in awesome-jev-tools; not run by me) |
+| Independent OOD calibration test: 900 rule-generated tickets plus 3 public benchmarks | [jev-ood-calibration](https://github.com/scienthoon/jev-ood-calibration) (not run by me) |
 
 The first two rows disagree on the direction of miscalibration. That may come from different checkpoints or data, so measure on your own data.
 
@@ -68,7 +68,7 @@ The first two rows disagree on the direction of miscalibration. That may come fr
 
 ## Domain benchmarks
 
-Descriptions are from the [awesome-jev-tools](https://github.com/v-modal/awesome-jev-tools) listing (as of 04 Oct 2026); I confirmed the links resolve but did not run them.
+Descriptions are my own words based on each project's own page (as of 04 Oct 2026); I confirmed the links resolve but did not run them. Sources are credited in [REFERENCES.md](REFERENCES.md).
 
 | Benchmark | What it measures |
 |---|---|

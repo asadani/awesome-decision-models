@@ -28,6 +28,8 @@ Consequences that drive every design in this list:
 ## Contents
 
 - [Learn more](LEARN.md): the best introductions, tutorials and explainers, in reading order
+- [Gaps](GAPS.md): what is and isn't built yet, with the evidence and its limits
+- [References & credits](REFERENCES.md): sources, licenses and attribution
 - [Models](models.md): hosted and open-weight decision models compared
 - [Benchmarks](benchmarks.md): what's been measured, by whom, with caveats
 - [Papers](papers.md): arXiv papers with summaries
@@ -44,7 +46,7 @@ Consequences that drive every design in this list:
 
 ## Related lists
 
-- [v-modal/awesome-jev-tools](https://github.com/v-modal/awesome-jev-tools): the largest Jev tool directory; most tool entries here were first found there
+- [v-modal/awesome-jev-tools](https://github.com/v-modal/awesome-jev-tools): the largest Jev tool directory; one of several lists used to discover projects (see [REFERENCES.md](REFERENCES.md))
 - [yibie/awesome-jev](https://github.com/yibie/awesome-jev)
 - [kraayenjon/awesome-jev](https://github.com/kraayenjon/awesome-jev)
 - [Open Jev collection on Hugging Face](https://huggingface.co/collections/Ferr0/open-jev-typed-decision-models)
@@ -53,7 +55,7 @@ Consequences that drive every design in this list:
 
 Almost every number here is **vendor-reported or single-author and not independently replicated**. Each entry says who measured it. Treat all comparisons as indicative. Where two sources disagree, both are shown.
 
-Claims came from the linked source pages, which were downloaded and searched for the exact figures on 04 Oct 2026. Tool descriptions in the category files are copied from the [awesome-jev-tools](https://github.com/v-modal/awesome-jev-tools) listing; I confirmed the links resolve but did not run the tools.
+Claims came from the linked source pages, which were downloaded and searched for the exact figures on 04 Oct 2026. Tool descriptions in the category files are written in my own words from each project's own GitHub description; I confirmed the links resolve but did not run the tools. Full credits and licenses: [REFERENCES.md](REFERENCES.md).
 
 ## Suggested reading order
 

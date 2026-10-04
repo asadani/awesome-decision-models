@@ -1,20 +1,20 @@
 # Search, ranking & scoring
 
-Using Score and Noul questions to rank or grade items. Descriptions are from the [awesome-jev-tools](https://github.com/v-modal/awesome-jev-tools) listing unless noted; not run by me.
+Using Score and Noul questions to rank or grade items. Descriptions are my own words, based on each project's own GitHub description (as of 04 Oct 2026). Projects were discovered through several lists and searches (see [REFERENCES.md](../REFERENCES.md)). I have not run the tools. The License column is what GitHub reports for each repo, not legal advice.
 
-| Tool | What it does |
-|---|---|
-| [jev-reranker](https://github.com/hotchpotch/jev-reranker) | Assesses retrieved documents for relevance |
-| [Jev Search](https://github.com/superagents-lab/jev-search) | Ranks Search1API results by relevance |
-| [jevsearch](https://github.com/kylemclaren/jevsearch) | shadcn/ui search that reorders hits with Jev |
-| [LlamaIndex Jev](https://github.com/WiktorB2004/llama-index-jev) | LlamaIndex adapter for retrieval |
-| [citation-verifier](https://github.com/MarissaFamularo/citation-verifier) | Checks whether citations support the claims in academic papers |
-| [jev-bfs](https://github.com/komikat/jev-bfs) | Finds Wikipedia link paths via ranked links |
-| [jev-scout](https://github.com/AkashPriyadarshii/jev-scout) | Open-source repo scout |
-| [jev-seo](https://github.com/AkashPriyadarshii/jev-seo) | SEO and GEO search radar CLI suite |
-| [SemanticSpace](https://semanticspace.dev/) | Places phrases in 2D via relationship scores |
-| [jevql](https://github.com/kylemclaren/jevql) | psql-shaped CLI with SQL integration |
-| [sqlite-jev](https://github.com/mgaitan/sqlite-jev) | SQLite loadable extension |
+| Tool | What it does | License |
+|---|---|---|
+| [jev-reranker](https://github.com/hotchpotch/jev-reranker) | Relevance filtering and reranking for RAG in Python | MIT |
+| [Jev Search](https://github.com/superagents-lab/jev-search) | Web search with source selection, query understanding and relevance ranking | MIT |
+| [jevsearch](https://github.com/kylemclaren/jevsearch) | Site-search component that ranks results by answering the question | MIT |
+| [LlamaIndex Jev](https://github.com/WiktorB2004/llama-index-jev) | LlamaIndex reranker and router returning typed scores and choices | MIT |
+| [citation-verifier](https://github.com/MarissaFamularo/citation-verifier) | Checks whether each cited paper supports the sentence that cites it | MIT |
+| [jev-bfs](https://github.com/komikat/jev-bfs) | Wikipedia link races using direct ranking, with a live terminal display | MIT |
+| [jev-scout](https://github.com/AkashPriyadarshii/jev-scout) | Scouts open-source repos and crates using System One scoring | MIT |
+| [jev-seo](https://github.com/AkashPriyadarshii/jev-seo) | Free Rust SEO and GEO toolkit with site audits, crawls and citation checks | MIT |
+| [SemanticSpace](https://semanticspace.dev/) | Web tool placing phrases on a 2D map by relationship scores (closed; no repo) | n/a |
+| [jevql](https://github.com/kylemclaren/jevql) | Semantic SQL for Postgres | MIT |
+| [sqlite-jev](https://github.com/mgaitan/sqlite-jev) | Batched natural-language judgments inside SQLite | none stated |
 
 ## Evidence on reranking
 

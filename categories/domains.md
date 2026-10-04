@@ -4,25 +4,25 @@ High-stakes areas. Calibration and human oversight matter far more here than spe
 
 ## Finance and trading
 
-| Tool | What it does |
-|---|---|
-| [Jevinik](https://github.com/unicodeveloper/jevocks) | Terminal for stock-direction decisions |
-| [jev_stock](https://github.com/sosopop/jev_stock) | Hong Kong stock forecasting framework |
-| [jev-trade](https://github.com/aowang-ai/jev-trade) | Crypto trading on Hyperliquid |
+| Tool | What it does | License |
+|---|---|---|
+| [Jevinik](https://github.com/unicodeveloper/jevocks) | Terminal view of stock direction (repo description: Everyday Stocks Status with Jev) | none stated |
+| [jev_stock](https://github.com/sosopop/jev_stock) | Experimental framework for forecasting short-term stock direction from structured market data | none stated |
+| [jev-trade](https://github.com/aowang-ai/jev-trade) | Live crypto trader on Hyperliquid | unclear |
 
 I have seen no independent evidence that these make money. Treat them as demos.
 
 ## Legal
 
-| Tool | What it does |
-|---|---|
-| [LegalForecastBench](https://github.com/johnhughes3/LegalForecastBench) | Benchmark for predicting federal motion-to-dismiss rulings |
+| Tool | What it does | License |
+|---|---|---|
+| [LegalForecastBench](https://github.com/johnhughes3/LegalForecastBench) | Benchmark and evaluation workflows for predicting motion-to-dismiss outcomes | Apache-2.0 |
 
 ## Health
 
-| Tool | What it does |
-|---|---|
-| [Open Medical Jev](https://github.com/FeiLiuEM/open-medical-jev) | Medical exam evaluation system |
+| Tool | What it does | License |
+|---|---|---|
+| [Open Medical Jev](https://github.com/FeiLiuEM/open-medical-jev) | Locally deployed medical decision service, evaluated on national medical exams | MIT |
 
 ## Science and public data
 

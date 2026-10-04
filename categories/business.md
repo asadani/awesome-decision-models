@@ -1,6 +1,6 @@
 # Business & operations
 
-Triage, routing and screening for teams. Descriptions are from the [awesome-jev-tools](https://github.com/v-modal/awesome-jev-tools) listing; not run by me.
+Triage, routing and screening for teams. Descriptions are my own words, based on each project's own GitHub description (as of 04 Oct 2026). Projects were discovered through several lists and searches (see [REFERENCES.md](../REFERENCES.md)). I have not run the tools. The License column is what GitHub reports for each repo, not legal advice.
 
 | Tool | What decision it makes |
 |---|---|
