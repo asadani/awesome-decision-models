@@ -1,0 +1,46 @@
+name: Deploy site
+
+# Builds the website from the Markdown and publishes it with GitHub Pages.
+# Because asadani.github.io uses the custom domain tech.anujsadani.in, this project site is served at
+# https://tech.anujsadani.in/awesome-decision-models/ automatically. Do NOT add a CNAME file to this repo.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.13'
+      - run: pip install -r requirements-site.txt
+      - name: Build
+        run: python scripts/build_site.py
+      - name: Check structure, links and anchors
+        run: python scripts/check_site.py
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5

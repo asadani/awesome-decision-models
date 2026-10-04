@@ -136,6 +136,16 @@ Licenses as reported by GitHub's API on 04 Oct 2026: 134 MIT, 25 Apache-2.0, 20 
 [6Mikao9/jev-native-agent-with-extended-options](https://github.com/6Mikao9/jev-native-agent-with-extended-options), [andrelandgraf/safer-with-jev](https://github.com/andrelandgraf/safer-with-jev), [dabit3/jev-experiments](https://github.com/dabit3/jev-experiments), [diegocp01/living-folders](https://github.com/diegocp01/living-folders), [direwolfiy/JevPi](https://github.com/direwolfiy/JevPi), [fhshaik/typesafe-mario](https://github.com/fhshaik/typesafe-mario), [GiesN/typesafe-jev-workflow](https://github.com/GiesN/typesafe-jev-workflow), [grmkris/robo-harness](https://github.com/grmkris/robo-harness), [hegargarcia/jev-playground](https://github.com/hegargarcia/jev-playground), [kavehmz/typesafe-playground](https://github.com/kavehmz/typesafe-playground), [kxzk/typesafe-jev-drone-demo](https://github.com/kxzk/typesafe-jev-drone-demo), [mgaitan/sqlite-jev](https://github.com/mgaitan/sqlite-jev), [raihankhan-rk/diffjury](https://github.com/raihankhan-rk/diffjury), [Shogo-nfrealmusic/jev-eval](https://github.com/Shogo-nfrealmusic/jev-eval), [sosopop/jev_stock](https://github.com/sosopop/jev_stock), [unicodeveloper/jevocks](https://github.com/unicodeveloper/jevocks), [us/jev-local](https://github.com/us/jev-local), [v-modal/awesome-jev-tools](https://github.com/v-modal/awesome-jev-tools), [vercel-labs/ai-cli](https://github.com/vercel-labs/ai-cli), [yibie/awesome-jev](https://github.com/yibie/awesome-jev)
 
 
+## Website tooling
+
+| Component | License | Use |
+|---|---|---|
+| [Python-Markdown](https://github.com/Python-Markdown/markdown) | BSD-3-Clause | Converts the Markdown to HTML at build time |
+| [Newsreader](https://fonts.google.com/specimen/Newsreader), [Inter](https://fonts.google.com/specimen/Inter), [JetBrains Mono](https://fonts.google.com/specimen/JetBrains+Mono) | SIL Open Font License 1.1 | Page fonts, loaded from Google Fonts (the same fonts as the parent blog) |
+| GitHub Pages and GitHub Actions | GitHub terms | Hosting and deployment |
+
+The site's design follows the parent blog's design system at [tech.anujsadani.in](https://tech.anujsadani.in/).
+
 ## Trademarks and affiliation
 
 Jev and TypeSafe AI, Laya, Strands, Clef, GLiDE, Perplexity, OpenAI and other names are the property of their owners. This repository is independent and is not affiliated with, endorsed by, or sponsored by any of them. Third-party projects named here, including tools that call themselves "unofficial," belong to their authors.

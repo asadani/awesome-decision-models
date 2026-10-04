@@ -27,6 +27,7 @@ Consequences that drive every design in this list:
 
 ## Contents
 
+- **Website:** https://tech.anujsadani.in/awesome-decision-models/ (searchable tools table, same content)
 - [Learn more](LEARN.md): the best introductions, tutorials and explainers, in reading order
 - [Gaps](GAPS.md): what is and isn't built yet, with the evidence and its limits
 - [References & credits](REFERENCES.md): sources, licenses and attribution
@@ -65,6 +66,18 @@ Claims came from the linked source pages, which were downloaded and searched for
 4. [Laya reproduction (2609.33843)](https://arxiv.org/abs/2609.33843): calibration and escalation-gate failure
 5. [JEV-as-a-Judge (2609.26550)](https://arxiv.org/abs/2609.26550): the strongest case for accept-or-escalate cascades
 6. [Jev in the Wild (2609.30216)](https://arxiv.org/abs/2609.30216): what 2,170 projects actually build
+
+## Website
+
+The site at https://tech.anujsadani.in/awesome-decision-models/ is built from these Markdown files, which stay the single source of truth. To build it locally:
+
+```text
+pip install -r requirements-site.txt
+python scripts/build_site.py     # writes _site/
+python scripts/check_site.py     # structure, links and anchors
+```
+
+A GitHub Actions workflow builds, checks and deploys it on every push to `main`. Do not add a `CNAME` file: the site inherits the custom domain from the `asadani.github.io` repo.
 
 ## License
 
