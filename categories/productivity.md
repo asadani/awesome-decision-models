@@ -20,7 +20,7 @@ Tools where a decision model handles a small, frequent judgment for an individua
 
 ## File and folder organization
 
-Correction: an earlier version of this page said I had found no such tool. That was wrong. A GitHub search on 04 Oct 2026 turns up at least nine small projects, all created within three weeks of Jev's launch and all with two stars or fewer. They are early prototypes, and none has an independent evaluation that I could find. Method and caveats: [GAPS.md](../GAPS.md).
+A GitHub search on 04 Oct 2026 finds at least nine small projects, all created within three weeks of Jev's launch and all with two stars or fewer. They are early prototypes, and none had an independent evaluation at the time of the search. Method and caveats: [GAPS.md](../GAPS.md).
 
 | Tool | What it does | License |
 |---|---|---|

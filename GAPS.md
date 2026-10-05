@@ -1,12 +1,6 @@
 # Gaps: what is built, what isn't
 
-**Short answer:** almost every idea I could think of already has a prototype, built within three weeks of Jev's launch. The gap is **maturity and evidence**, not existence: the projects are tiny, mostly one-person, and almost none has an independent evaluation. This page shows the evidence and its limits. Data collected **04 Oct 2026**; the numbers will date quickly.
-
-## Corrections to what I said earlier
-
-- I told you I found no decision-model tool for organizing files, and an earlier version of [productivity.md](categories/productivity.md) repeated that. **Wrong.** I had only checked one list. Nine projects exist ([list](categories/productivity.md#file-and-folder-organization)).
-- I proposed three possible gaps in chat: hierarchical choice over large option sets, cross-step error budgets, and a neutral cross-model benchmark. **Each has at least one existing prototype** (table below), though all are small and unproven.
-- I said calibration tooling was missing, and then found jevcal, DSPy's `ReAnchor`, huncho and others. See [infra-and-evaluation.md](categories/infra-and-evaluation.md).
+**Short answer:** almost every idea checked here already has a prototype, built within three weeks of Jev's launch. The gap is **maturity and evidence**, not existence: the projects are tiny, mostly one-person, and almost none has an independent evaluation. This page shows the evidence and its limits. Data collected **04 Oct 2026**; the numbers will date quickly.
 
 ## Method
 
