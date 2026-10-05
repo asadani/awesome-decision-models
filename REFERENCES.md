@@ -1,18 +1,18 @@
 # References and credits
 
-This repository is a guide that points to other people's work. This page credits that work, records the license of every repository we link to, and explains what we do and don't take from each source. Facts below were checked on **04 Oct 2026**; licenses can change, so check the source before reusing anything.
+This repository is a guide that points to other people's work. This page credits that work, records the license of every repository linked here, and explains what this repository does and does not take from each source. Facts below were checked on **04 Oct 2026**; licenses can change, so check the source before reusing anything.
 
 Not legal advice. If you are the author of something listed here and want a correction or removal, open an issue and it will be handled promptly.
 
-## What we take, and what we don't
+## What is taken, and what is not
 
-| We do | We don't |
+| This repository does | This repository does not |
 |---|---|
 | Link to the original source for every claim | Copy source code, README prose, images or datasets |
-| Report facts and figures (numbers, dates, sizes, license names), attributed to the source and dated | Present vendor claims as our own measurements |
-| Describe each tool in our own words, based on that project's own GitHub description | Reproduce another list's wording |
+| Report facts and figures (numbers, dates, sizes, license names), attributed to the source and dated | Present vendor claims as its own measurements |
+| Describe each tool in original wording, based on that project's own GitHub description | Reproduce another list's wording |
 | Use very short quotations (a phrase or a sentence) where wording matters, with a link | Quote at length |
-| Summarize paper abstracts in our own words, with the arXiv link | Redistribute papers |
+| Summarize paper abstracts in original wording, with the arXiv link | Redistribute papers |
 
 Linking to a repository does not give anyone a license to its code. Use each project under its own terms.
 
@@ -22,20 +22,20 @@ An earlier version of this repository (commits `dc37a66` to `a1f46c2`) carried s
 
 ## Discovery sources
 
-These were used to find projects and papers. We copied no text from them. Where a project appears in our tables, its description is ours and its license is read from the project's own repo.
+These were used to find projects and papers. No text was copied from them. Where a project appears in the tables, its description is original and its license is read from the project's own repo.
 
-| Source | License | How we used it |
+| Source | License | How it was used |
 |---|---|---|
 | [v-modal/awesome-jev-tools](https://github.com/v-modal/awesome-jev-tools) | None stated | Found most of the tool projects; see the transparency note above |
 | [yibie/awesome-jev](https://github.com/yibie/awesome-jev) | None stated | Related list, cross-reference only |
 | [kraayenjon/awesome-jev](https://github.com/kraayenjon/awesome-jev) | Unclear (GitHub could not classify it) | Related list, cross-reference only |
 | [Open Jev collection (Hugging Face)](https://huggingface.co/collections/Ferr0/open-jev-typed-decision-models) | Per model | Found open-weight models; each model's license is read from its own page |
 | GitHub repository search, run on 04 Oct 2026 | n/a | Counted and found projects for [GAPS.md](GAPS.md) |
-| [Jev in the Wild (arXiv 2609.30216)](https://arxiv.org/abs/2609.30216) | arXiv | Aggregate ecosystem statistics (category counts, stars); we reuse numbers only |
+| [Jev in the Wild (arXiv 2609.30216)](https://arxiv.org/abs/2609.30216) | arXiv | Aggregate ecosystem statistics (category counts, stars); only the numbers are reused |
 
-## Projects, models and vendors we draw facts from
+## Projects, models and vendors used as fact sources
 
-| Source | License (as of 04 Oct 2026) | What we used |
+| Source | License (as of 04 Oct 2026) | What was used |
 |---|---|---|
 | TypeSafe AI, [Jev on Vercel AI Gateway](https://vercel.com/ai-gateway/models/jev) | Proprietary API | Release date, price, context size |
 | [Simon Willison's post on Jev](https://simonwillison.net/2026/Sep/21/jev/) | © author | Price at launch; quoted phrase on weaknesses; the "good city" anecdote |
@@ -57,7 +57,7 @@ These were used to find projects and papers. We copied no text from them. Where 
 
 ## Papers
 
-Abstract-level summaries in our own words. Each paper is the property of its authors; follow the arXiv link for terms.
+Abstract-level summaries in original wording. Each paper is the property of its authors; follow the arXiv link for terms.
 
 | arXiv | Title | First author | Date |
 |---|---|---|---|
@@ -79,7 +79,7 @@ Background papers listed in [papers.md](papers.md) but not summarized: [2605.063
 
 ## Articles and documentation
 
-Linked in [LEARN.md](LEARN.md). All © their respective authors; we link, summarize in our own words, and quote only short phrases.
+Linked in [LEARN.md](LEARN.md). All © their respective authors; only links, original-wording summaries and short quoted phrases are used.
 
 [Hugging Face community guide (paidaxccc)](https://huggingface.co/blog/paidaxccc/what-is-jev-model-a-practical-guide-to-typed-ai-de) · [LangChain](https://www.langchain.com/blog/building-a-harness-with-jev) · [Michał Chromiak](https://mchromiak.github.io/articles/2026/Sep/17/Typed-Decision-Models-Jev-and-Laya-in-Agentic-AI/) · [Vercel: Jev in the agent loop](https://vercel.com/i/jev-agent-control) · [Vercel Knowledge Base](https://vercel.com/kb/guide/typesafe-jev-and-ai-sdk) · [Firecrawl](https://www.firecrawl.dev/blog/what-is-jev) · [DSPy docs](https://dspy.ai/current/tutorials/jev_decisions/) · [dev.to: What is Laya?](https://dev.to/vishalmysore/what-is-laya-laya-vs-jev-with-live-demo-4j6e)
 
@@ -115,7 +115,7 @@ Licenses as reported by GitHub's API on 04 Oct 2026: 134 MIT, 25 Apache-2.0, 20 
 
 **CC-BY-4.0** (1): [Jevals/jevals-data](https://github.com/Jevals/jevals-data)
 
-**AGPL-3.0** (3). Strong copyleft. We only link to these; do not copy their code into closed-source work.
+**AGPL-3.0** (3). Strong copyleft. These are linked only; do not copy their code into closed-source work.
 
 [GoldenLoaf24h/browserclaw](https://github.com/GoldenLoaf24h/browserclaw), [usenotra/notra](https://github.com/usenotra/notra), [xinyao27/jevonian](https://github.com/xinyao27/jevonian)
 
@@ -131,7 +131,7 @@ Licenses as reported by GitHub's API on 04 Oct 2026: 134 MIT, 25 Apache-2.0, 20 
 
 [aowang-ai/jev-trade](https://github.com/aowang-ai/jev-trade), [bastani-inc/atomic](https://github.com/bastani-inc/atomic), [F0Rextasy/omp-laya-judge](https://github.com/F0Rextasy/omp-laya-judge), [jgridifier/jev-research-eval](https://github.com/jgridifier/jev-research-eval), [kraayenjon/awesome-jev](https://github.com/kraayenjon/awesome-jev), [legacybridge-tech/pi-typesafe-jev](https://github.com/legacybridge-tech/pi-typesafe-jev), [milanboers/jev-plays-pokemon](https://github.com/milanboers/jev-plays-pokemon), [vercel-labs/ai-python](https://github.com/vercel-labs/ai-python), [whysooraj/laya-file-organizer](https://github.com/whysooraj/laya-file-organizer), [zhihz/openjev](https://github.com/zhihz/openjev)
 
-**No license stated** (20). No license stated, so default copyright applies (all rights reserved). We link and describe in our own words, and we copy no code or prose. Ask the owner before reusing anything.
+**No license stated** (20). No license stated, so default copyright applies (all rights reserved). These are linked and described in original wording; no code or prose is copied. Ask the owner before reusing anything.
 
 [6Mikao9/jev-native-agent-with-extended-options](https://github.com/6Mikao9/jev-native-agent-with-extended-options), [andrelandgraf/safer-with-jev](https://github.com/andrelandgraf/safer-with-jev), [dabit3/jev-experiments](https://github.com/dabit3/jev-experiments), [diegocp01/living-folders](https://github.com/diegocp01/living-folders), [direwolfiy/JevPi](https://github.com/direwolfiy/JevPi), [fhshaik/typesafe-mario](https://github.com/fhshaik/typesafe-mario), [GiesN/typesafe-jev-workflow](https://github.com/GiesN/typesafe-jev-workflow), [grmkris/robo-harness](https://github.com/grmkris/robo-harness), [hegargarcia/jev-playground](https://github.com/hegargarcia/jev-playground), [kavehmz/typesafe-playground](https://github.com/kavehmz/typesafe-playground), [kxzk/typesafe-jev-drone-demo](https://github.com/kxzk/typesafe-jev-drone-demo), [mgaitan/sqlite-jev](https://github.com/mgaitan/sqlite-jev), [raihankhan-rk/diffjury](https://github.com/raihankhan-rk/diffjury), [Shogo-nfrealmusic/jev-eval](https://github.com/Shogo-nfrealmusic/jev-eval), [sosopop/jev_stock](https://github.com/sosopop/jev_stock), [unicodeveloper/jevocks](https://github.com/unicodeveloper/jevocks), [us/jev-local](https://github.com/us/jev-local), [v-modal/awesome-jev-tools](https://github.com/v-modal/awesome-jev-tools), [vercel-labs/ai-cli](https://github.com/vercel-labs/ai-cli), [yibie/awesome-jev](https://github.com/yibie/awesome-jev)
 

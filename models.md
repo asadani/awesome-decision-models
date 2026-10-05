@@ -1,6 +1,6 @@
 # Models
 
-Decision models that answer typed Choice / Score / Noul questions. Sizes, licenses and figures are as stated by the linked source on **04 Oct 2026**; blank means I didn't confirm it. I read the linked pages but did not run any of the models.
+Decision models that answer typed Choice / Score / Noul questions. Sizes, licenses and figures are as stated by the linked source on **04 Oct 2026**; blank means it was not confirmed. The linked pages were read; none of the models were run.
 
 ## Hosted
 
@@ -22,13 +22,13 @@ Decision models that answer typed Choice / Score / Noul questions. Sizes, licens
 | **[Clef-flash](https://huggingface.co/Cloudflare/clef-flash)** / **[Clef](https://huggingface.co/Cloudflare/clef)** | 9B / 27B | frozen Qwen 3.5-9B / Qwen 3.8-27B + low-rank adapters (Clef rank 256) | Apache-2.0 | Cloudflare. Non-autoregressive, with a vision encoder for images. Median latency in Cloudflare's own test (as of 01 Oct 2026): 38.8 ms (flash), 209.3 ms (Clef), 524.1 ms (Jev). Trained with synthetic data, Brier loss and RLCD. See [benchmarks.md](benchmarks.md) for the vendor-reported scores and what is unreplicated. |
 | **[pplx-decider-v1-27b](https://huggingface.co/perplexity-ai/pplx-decider-v1-27b)** | 27B | Qwen3.8-27B | Apache-2.0 | Perplexity, released 01 Oct 2026. 262,144-token context. Per the [AI Weekly summary](https://aiweekly.co/alerts/perplexity-open-sources-27b-decider-edges-jev-on-11-test-panel) of its docs: responses under two seconds for a few hundred input tokens, up to 23 s near the context limit. |
 | **Julia-1** | 144M | | Apache-2.0 | Multilingual (50+ languages), no images; the fastest model in the llama.cpp post (~3 ms/question there). Listed in [llama.cpp's decision-model post](https://huggingface.co/blog/ggml-org/decision-models-in-llamacpp). |
-| **lev** | 4B | | Apache-2.0 | English only. Listed in the llama.cpp post. I haven't found its source repo. |
+| **lev** | 4B | | Apache-2.0 | English only. Listed in the llama.cpp post. Its source repo was not found. |
 | **OpenJev (27B)** | 27B | | **CC BY-NC 4.0** | Multilingual (en, de, fr, hi, zh, ja) and image input; ~43 ms/question in llama.cpp. **Non-commercial license**, unlike most others here. Listed in the llama.cpp post. |
 | **[RSI-Jev](https://github.com/Shanghua-Gao/RSI-Jev)** | 0.8B, 2B; later a 3B vision-language release | Qwen 3.5 | Code MIT; weights Apache-2.0 (following the base model) | Produced by a self-improving research loop. As of 04 Oct 2026 the README lists v3.0 (15-benchmark suite 0.756, ECE 0.066), v4.0-VL (01 Oct 2026; image top-1 0.803 on held-out image benchmarks, ECE 0.043) and a v5.0-VL 3B weights release. It reports about 10 ms for a second question about a document already read, not for every decision. All figures self-reported. [HF v1.0 2B](https://huggingface.co/shgao/rsi-jev-v1.0-qwen3.5-2b) |
 | **[autotrust/JEV-27B](https://huggingface.co/blog/autotrust/autotrustjev-27b-fast-calibrated-decisions-and-ful)** | 27B | | Apache-2.0 | "Fast calibrated decisions and full reasoning"; larger model that can also reason. |
 | **[Mapika/decider-2b](https://github.com/Mapika/decider)** | 2B | Qwen 3.5 | | Fine-tune that emits typed decisions; listed in the Open Jev collection on Hugging Face. |
 | **[Kev](https://github.com/jaredpalmer/kev)** | 0.5B–27B family | Qwen 2.5 / 3.5 | | Trainable replica; sources disagree on exact sizes. |
-| **SemIf (formerly OpenJev)** | wraps e.g. 4B | frozen Qwen3.5-4B | MIT | Per a secondary roundup (search result; not verified): reads logprobs of candidate tokens in one pass, so no training required. I haven't located its repo. |
+| **SemIf (formerly OpenJev)** | wraps e.g. 4B | frozen Qwen3.5-4B | MIT | Per a secondary roundup (search result; not verified): reads logprobs of candidate tokens in one pass, so no training required. Its repo was not located. |
 | **[openjev (zhihz)](https://github.com/zhihz/openjev)** | | | | Described as an independent local bilingual decision model. May be unrelated to SemIf despite the name; unverified. |
 | **[NanoJev](https://github.com/TianyuCodings/NanoJev)** | 0.6B | | | Parallel decision model with training pipeline. |
 | **[von](https://github.com/wfzyx/von)** | 395M | | | Non-autoregressive System One model. |
@@ -49,7 +49,7 @@ Other runtimes: [Laya via ONNX/Node](https://github.com/receptron/laya), [jev-lo
 
 ## Keep the model swappable
 
-Five new decision models or APIs appeared within a few days of each other (GLiDE 09-30; Strands, Clef and Perplexity 10-01; OpenAI's preview at DevDay). Cloudflare says Clef uses the same System One API as Jev, and llama.cpp serves a `/v1/systemone` endpoint. I haven't checked the others. Pin the model version, keep a calibration set, and put the model behind a thin interface so you can switch.
+Five new decision models or APIs appeared within a few days of each other (GLiDE 09-30; Strands, Clef and Perplexity 10-01; OpenAI's preview at DevDay). Cloudflare says Clef uses the same System One API as Jev, and llama.cpp serves a `/v1/systemone` endpoint. The others were not checked. Pin the model version, keep a calibration set, and put the model behind a thin interface so you can switch.
 
 ## Training and conversion kits
 

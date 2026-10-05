@@ -1,6 +1,6 @@
 # Learn more
 
-The best starting points, in a suggested reading order. I opened and read each one on 04 Oct 2026. The one-line notes say what you get from it. Dates are each page's own publication date.
+The best starting points, in a suggested reading order. Each one was opened and read on 04 Oct 2026. The one-line notes say what you get from it. Dates are each page's own publication date.
 
 ## 1. What is a decision model? (start here)
 
@@ -14,11 +14,11 @@ The best starting points, in a suggested reading order. I opened and read each o
 ## 2. How decision models fit into agents
 
 4. **[Typed Decision Models: Jev and Laya in Agentic AI](https://mchromiak.github.io/articles/2026/Sep/17/Typed-Decision-Models-Jev-and-Laya-in-Agentic-AI/)** · Michał Chromiak · 17 Sep 2026
-   The most careful explainer I found. It separates the decision pattern from any one model, explains what the probabilities do and don't mean, compares Jev and Laya claims critically, and lists production failure modes and how to evaluate on your own workflow.
+   The most careful explainer among those reviewed. It separates the decision pattern from any one model, explains what the probabilities do and don't mean, compares Jev and Laya claims critically, and lists production failure modes and how to evaluate on your own workflow.
 5. **[Where does Jev fit in an AI agent loop?](https://vercel.com/i/jev-agent-control)** · Vercel
    Short and official. The key point: your application invokes tools and enforces permissions; the decision model supplies judgments.
 6. **[What Is Jev? Inside TypeSafe's Decision-Only AI Model and Its Developer Use Cases](https://www.firecrawl.dev/blog/what-is-jev)** · Firecrawl (Hiba Fathima) · 23 Sep 2026 (updated)
-   Broad tour with six developer use cases and a useful section on why "can't hallucinate" is a narrower claim than it sounds. It also reports TypeSafe's own speed claims, which I did not verify.
+   Broad tour with six developer use cases and a useful section on why "can't hallucinate" is a narrower claim than it sounds. It also reports TypeSafe's own speed claims, which were not verified.
 
 ## 3. Hands-on tutorials
 

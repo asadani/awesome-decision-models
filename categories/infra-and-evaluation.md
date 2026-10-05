@@ -1,6 +1,6 @@
 # Infra, SDKs & calibration/eval tooling
 
-Descriptions are my own words, based on each project's own GitHub description (as of 04 Oct 2026). Projects were discovered through several lists and searches (see [REFERENCES.md](../REFERENCES.md)). I have not run the tools. The License column is what GitHub reports for each repo, not legal advice.
+Descriptions are in original wording, based on each project's own GitHub description (as of 04 Oct 2026). Projects were discovered through several lists and searches (see [REFERENCES.md](../REFERENCES.md)). The tools have not been run. The License column is what GitHub reports for each repo, not legal advice.
 
 ## Calibration, thresholds and evaluation
 
@@ -67,4 +67,4 @@ Found through GitHub searches on 04 Oct 2026 (see [GAPS.md](../GAPS.md)). All ar
 
 - Observability and tracing for decision pipelines: only a few small projects (for example jeview, 61 stars), see [GAPS.md](../GAPS.md)
 - Open **Laya** tool registries; nearly all tooling above targets Jev
-- Cross-step threshold optimization: every calibration tool I found tunes one question at a time
+- Cross-step threshold optimization: every calibration tool found tunes one question at a time

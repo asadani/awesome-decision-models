@@ -1,6 +1,6 @@
 # Edge, robotics & games
 
-Latency is the point here. A decision every few milliseconds is only possible with a small, non-generative model. Descriptions are my own words, based on each project's own GitHub description (as of 04 Oct 2026). Projects were discovered through several lists and searches (see [REFERENCES.md](../REFERENCES.md)). I have not run the tools. The License column is what GitHub reports for each repo, not legal advice.
+Latency is the point here. A decision every few milliseconds is only possible with a small, non-generative model. Descriptions are in original wording, based on each project's own GitHub description (as of 04 Oct 2026). Projects were discovered through several lists and searches (see [REFERENCES.md](../REFERENCES.md)). The tools have not been run. The License column is what GitHub reports for each repo, not legal advice.
 
 ## Edge and embedded
 

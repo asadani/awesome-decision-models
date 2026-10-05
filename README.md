@@ -56,7 +56,7 @@ Consequences that drive every design in this list:
 
 Almost every number here is **vendor-reported or single-author and not independently replicated**. Each entry says who measured it. Treat all comparisons as indicative. Where two sources disagree, both are shown.
 
-Claims came from the linked source pages, which were downloaded and searched for the exact figures on 04 Oct 2026. Tool descriptions in the category files are written in my own words from each project's own GitHub description; I confirmed the links resolve but did not run the tools. Full credits and licenses: [REFERENCES.md](REFERENCES.md).
+Claims came from the linked source pages, which were downloaded and searched for the exact figures on 04 Oct 2026. Tool descriptions in the category files are written in original wording from each project's own GitHub description; the links were confirmed to resolve, but the tools were not run. Full credits and licenses: [REFERENCES.md](REFERENCES.md).
 
 ## Suggested reading order
 

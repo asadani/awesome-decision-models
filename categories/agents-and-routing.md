@@ -2,7 +2,7 @@
 
 The pattern: a decision model handles frequent, closed, recoverable choices inside an agent loop, and an LLM handles reasoning and generation. Decision models can't call tools or produce free-form arguments, so something else proposes the options and your code executes ([Vercel](https://vercel.com/i/jev-agent-control), [layaAgent](https://github.com/vishalmysore/layaAgent)).
 
-Descriptions are my own words, based on each project's own GitHub description (as of 04 Oct 2026). Projects were discovered through several lists and searches (see [REFERENCES.md](../REFERENCES.md)). I have not run the tools. The License column is what GitHub reports for each repo, not legal advice.
+Descriptions are in original wording, based on each project's own GitHub description (as of 04 Oct 2026). Projects were discovered through several lists and searches (see [REFERENCES.md](../REFERENCES.md)). The tools have not been run. The License column is what GitHub reports for each repo, not legal advice.
 
 ## Model routers (pick the cheapest capable LLM)
 
@@ -47,7 +47,7 @@ Descriptions are my own words, based on each project's own GitHub description (a
 
 | Tool | What it does | License |
 |---|---|---|
-| [Jev-Mem](https://github.com/craftsland/Jev-Mem) | Reference code for [2609.23986](https://arxiv.org/abs/2609.23986): a decision-model controller handles memory typing, routing, scoring and stopping; the LLM only synthesizes the answer. Reported on LoCoMo in the paper's abstract: 6.6× faster memory build, 36.7% lower query latency. A second repo, [libingzheren/Jev-Mem](https://github.com/libingzheren/Jev-Mem), also appears; I haven't determined which is canonical. | MIT |
+| [Jev-Mem](https://github.com/craftsland/Jev-Mem) | Reference code for [2609.23986](https://arxiv.org/abs/2609.23986): a decision-model controller handles memory typing, routing, scoring and stopping; the LLM only synthesizes the answer. Reported on LoCoMo in the paper's abstract: 6.6× faster memory build, 36.7% lower query latency. A second repo, [libingzheren/Jev-Mem](https://github.com/libingzheren/Jev-Mem), also appears; Which one is canonical has not been determined. | MIT |
 
 See also the pre-registered test in [papers.md](../papers.md#agent-memory): selecting raw turns with one decision-model call matched LLM extraction at a tight budget, but extraction won at generous budgets.
 

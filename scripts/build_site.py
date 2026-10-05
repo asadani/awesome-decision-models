@@ -329,8 +329,8 @@ for t in TOOLS:
 cat_opts = ''.join(f'<option value="{esc(c)}">{esc(c)}</option>' for c in cats)
 lic_opts = ''.join(f'<option value="{k}">{v}</option>' for k, v in LIC_LABEL.items())
 tools_body = f'''
-<p class="note">Descriptions are written in my own words from each project's own GitHub description (as of 04 Oct 2026).
-I have not run these tools. The license is what GitHub reports for each repo and is not legal advice: a repo with no
+<p class="note">Descriptions are written in original wording from each project's own GitHub description (as of 04 Oct 2026).
+The tools have not been run. The license is what GitHub reports for each repo and is not legal advice: a repo with no
 license is all rights reserved by default. Sources and the full license index are on the
 <a href="{rel("tools", "references")}">credits page</a>.</p>
 <div class="filters">
@@ -368,7 +368,7 @@ cards = [
     ('tools', 'Search', 'Tools', f'{n_tools} projects you can filter by category and license.'),
     ('benchmarks', 'Evidence', 'Benchmarks', 'What has been measured, by whom, and the caveats before you quote it.'),
     ('papers', 'Research', 'Papers', f'{n_papers} arXiv papers, summarized and dated.'),
-    ('gaps', 'Analysis', 'Gaps', 'What already exists, what does not, and how I checked.'),
+    ('gaps', 'Analysis', 'Gaps', 'What already exists, what does not, and how that was checked.'),
 ]
 cards_html = ''.join(
     f'<a class="card" href="{rel("", s)}"><div class="card-label">{lab}</div><h3>{t}</h3><p>{d}</p></a>' for s, lab, t, d in cards)

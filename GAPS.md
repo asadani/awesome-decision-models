@@ -4,13 +4,13 @@
 
 ## Method
 
-1. **Ecosystem census from a paper.** [Jev in the Wild (arXiv 2609.30216)](https://arxiv.org/abs/2609.30216) analyzed 2,170 verified public Jev projects on GitHub as of 22 Sep 2026, each assigned to one of 18 subcategories, with project counts and total stars. I reuse its Table 1 numbers and compute stars per project myself.
-2. **My own GitHub searches on 04 Oct 2026** (repository search, keyword queries such as "jev organize files"). I read the top results for each niche to check they are actually relevant.
+1. **Ecosystem census from a paper.** [Jev in the Wild (arXiv 2609.30216)](https://arxiv.org/abs/2609.30216) analyzed 2,170 verified public Jev projects on GitHub as of 22 Sep 2026, each assigned to one of 18 subcategories, with project counts and total stars. Its Table 1 numbers are reused here, and stars per project are computed from them.
+2. **GitHub searches run on 04 Oct 2026** (repository search, keyword queries such as "jev organize files"). The top results for each niche were read to check they are actually relevant.
 3. **Cross-check against this repo's catalog.**
 
 ## 1. Where the ecosystem is, per the census
 
-Source: Table 1 of [2609.30216](https://arxiv.org/abs/2609.30216) (22 Sep 2026; Jev only; Laya, Clef and later models are not in it). The last column is my own division, and the paper cautions that stars show visibility and not unmet demand.
+Source: Table 1 of [2609.30216](https://arxiv.org/abs/2609.30216) (22 Sep 2026; Jev only; Laya, Clef and later models are not in it). The last column is stars divided by projects, and the paper cautions that stars show visibility and not unmet demand.
 
 | Category | Subcategory | Projects | % of projects | Stars | % of stars | Stars per project |
 |---|---|---|---|---|---|---|
@@ -40,11 +40,11 @@ Reading it, with the paper's caveat that a few prominent repos dominate star tot
 - **Crowded and quiet:** Games & Simulation (227 projects, about 8 stars each) and Classification (184, about 6) are large, low-attention categories.
 - **How Jev is used:** attribute judgment appears in 77% of projects, scoring or ranking in 52% and action selection in 31%; 69.7% of projects with an identified purpose use more than one purpose.
 
-## 2. My niche check
+## 2. Niche check
 
-Raw counts are **noisy**: the bare keyword "jev" matches 15,683 repositories (the paper verified 2,170 real projects), so I only trust small, specific queries where I could read the results. Counts are GitHub repository-search totals on 04 Oct 2026.
+Raw counts are **noisy**: the bare keyword "jev" matches 15,683 repositories (the paper verified 2,170 real projects), so only small, specific queries whose results could be read are trusted. Counts are GitHub repository-search totals on 04 Oct 2026.
 
-| Idea | Query | Raw hits | What I found on reading the results | Most stars |
+| Idea | Query | Raw hits | What reading the results showed | Most stars |
 |---|---|---|---|---|
 | File and folder organization | "jev file organizer", "jev organize files", "jev downloads folder", "laya organize files", "jev duplicate files" | 6, 5, 2, 1, 1 | 9 distinct projects, created between 18 Sep and 4 Oct 2026 ([list](categories/productivity.md#file-and-folder-organization)). One uses Laya locally; one files notes through an MCP server | 2 |
 | Hierarchical choice and large option sets | "jev hierarchical" | 8 | At least 4 relevant: a taxonomy-tree knowledge service, an agent design that handles more options than the model's limit through paging, a hierarchical chat decoder, and a memory engine | 46 (NylonME) |
@@ -60,10 +60,10 @@ Raw counts are **noisy**: the bare keyword "jev" matches 15,683 repositories (th
 
 "Raw hits" for queries that returned 0 (for example "jev cascade escalation LLM fallback" and "system one decision model benchmark harness Jev Laya Clef") means the exact phrasing found nothing, which says little about whether such projects exist under other words.
 
-## 3. What this suggests (my interpretation, not a finding)
+## 3. What this suggests (interpretation, not a finding)
 
 1. **Don't build another prototype in these niches without a reason.** Someone has already made a small one. What is missing is a *good* one: tested, documented and evaluated.
-2. **The evidence gap is the biggest one.** Every performance claim about the new models is vendor-reported ([benchmarks.md](benchmarks.md)). The independent benchmarks I found are small (hundreds of items). A reproducible, multi-model comparison with calibration and cost per correct decision would be new and useful, and it fits a curation repo.
+2. **The evidence gap is the biggest one.** Every performance claim about the new models is vendor-reported ([benchmarks.md](benchmarks.md)). The independent benchmarks found are small (hundreds of items). A reproducible, multi-model comparison with calibration and cost per correct decision would be new and useful, and it fits a curation repo.
 3. **Compare, don't just list.** For any tool category, a short head-to-head on the same inputs would beat another list entry. File organization is a good test case because the projects are small enough to run.
 4. **Attention follows routing and browser agents**, per the census. If you want visibility, those are where stars go, but the census warns that this is concentration and not unmet demand.
 
@@ -71,7 +71,7 @@ Raw counts are **noisy**: the bare keyword "jev" matches 15,683 repositories (th
 
 - Everything here is GitHub only. Closed products and projects hosted elsewhere are invisible.
 - The census covers Jev projects up to 22 Sep 2026 only. Projects built for Laya, Clef, Strands Decider, pplx-decider or GLiDE are undercounted, as are Jev projects created after that date.
-- My searches mostly use the word "jev", so projects that don't name it are missed. Search ranking is by stars, so I read the most visible results and may have missed lower ones.
-- I did not run any project. "Exists" means a repository with that stated purpose, not that it works.
+- The searches mostly use the word "jev", so projects that don't name it are missed. Search ranking is by stars, so the most visible results were read and lower-ranked ones may have been missed.
+- No project was run. "Exists" means a repository with that stated purpose, not that it works.
 - Star counts are a snapshot and a crude proxy.
-- Search hit counts are noisy and unvetted except where I read the results.
+- Search hit counts are noisy and unvetted except where the results were read.

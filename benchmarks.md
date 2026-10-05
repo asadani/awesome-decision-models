@@ -24,17 +24,17 @@ Source: [Laya's BENCHMARKS.md](https://github.com/NandhaKishorM/laya/blob/main/B
 Other reruns:
 
 - [pavanjava/jev_and_laya_benchmarking](https://github.com/pavanjava/jev_and_laya_benchmarking) reports, on a 400-case typed-decisions split: accuracy Jev 0.734 vs Laya 0.766; p50 latency 756 ms vs 484 ms; p95 2,957 ms vs 663 ms. It notes Jev's score is close to its published 0.727 and Laya's matches its model card. This is a single-author repo (as of 04 Oct 2026), and Laya's 0.766 matches the fine-tuned figure above.
-- [Luni/laya-jev-benchmark](https://huggingface.co/datasets/Luni/laya-jev-benchmark) (dataset) and [harrymunro/jev-laya-benchmark](https://github.com/harrymunro/jev-laya-benchmark): related datasets and harnesses. I did not extract numbers from them.
+- [Luni/laya-jev-benchmark](https://huggingface.co/datasets/Luni/laya-jev-benchmark) (dataset) and [harrymunro/jev-laya-benchmark](https://github.com/harrymunro/jev-laya-benchmark): related datasets and harnesses. Numbers were not extracted from them.
 
 Latency depends heavily on harness: Laya's docs cite 236–276 ms for Jev (third-party), Cloudflare measured 524.1 ms median, and pavanjava measured 756 ms. Compare only within one harness.
 
 ## New entrants, vendor-reported (30 Sep – 02 Oct 2026)
 
-**Every number in this section comes from the vendors themselves, and I found no independent reproduction.** Panels, prompts and sample sizes differ, so don't compare across rows. Values as of 04 Oct 2026.
+**Every number in this section comes from the vendors themselves, and no independent reproduction was found.** Panels, prompts and sample sizes differ, so don't compare across rows. Values as of 04 Oct 2026.
 
 | Model | What was reported | Source |
 |---|---|---|
-| **Clef / Clef-flash** (Cloudflare, 01 Oct 2026) | Median latency 38.8 ms (Clef-flash), 209.3 ms (Clef) vs 524.1 ms for Jev; p95 122.4 / 238.6 / 536.0 ms. In the same table Laya's median is 5.8 ms, "very fast but trades off quality" (its BFCL score is 38.13). **By my reading of Cloudflare's 10-row table**, a Clef model has the top score on 7 of 10 benchmarks, Jev on 2 (When2Call 80.97 vs 72.37; BRIGHT 47.52 vs 45.91), and a "DiffusionGemma Jev" entry on PhishNChips (85.35). The post itself reports beating Jev "in 3 out of 4 areas" of TypeSafe's own eval suite and states results across 43 benchmarks. Examples: BANKING77 macro-F1 94.20 vs 79.74; BFCL 98.47 vs 95.75. | [Cloudflare blog](https://blog.cloudflare.com/clef-decision-models/) |
+| **Clef / Clef-flash** (Cloudflare, 01 Oct 2026) | Median latency 38.8 ms (Clef-flash), 209.3 ms (Clef) vs 524.1 ms for Jev; p95 122.4 / 238.6 / 536.0 ms. In the same table Laya's median is 5.8 ms, "very fast but trades off quality" (its BFCL score is 38.13). **Counting from Cloudflare's 10-row table**, a Clef model has the top score on 7 of 10 benchmarks, Jev on 2 (When2Call 80.97 vs 72.37; BRIGHT 47.52 vs 45.91), and a "DiffusionGemma Jev" entry on PhishNChips (85.35). The post itself reports beating Jev "in 3 out of 4 areas" of TypeSafe's own eval suite and states results across 43 benchmarks. Examples: BANKING77 macro-F1 94.20 vs 79.74; BFCL 98.47 vs 95.75. | [Cloudflare blog](https://blog.cloudflare.com/clef-decision-models/) |
 | **GLiDE** (Fastino, 30 Sep 2026) | "Decision Index" overall 64.81 vs Jev's *published* 57.91 (+6.90), using the Decision Index 0.2.1 scorer; leads across all five areas and 31 of 38 benchmarks. Knowledge & Reasoning 62.9 vs 51.4; Tools & Automation 83.5 vs 75.1; CLadder 88.7% vs 72.6%; CRUXEval 92.6% vs 73.0%. The post states "these results come from our own complete run." It doesn't say who built the Decision Index, and gives no latency or price. | [Fastino blog](https://fastino.ai/blog/introducing-glide-the-first-thinking-decision-model) |
 | **pplx-decider-v1-27b** (Perplexity, 01 Oct 2026) | 85.71% vs Jev 84.51% on Perplexity's own 11-benchmark, 7,210-sample panel; widest gap RAGTruth 88.80% vs 77.27%; Jev ahead on 4 of the 11. Per the news summary, Perplexity's docs publish no benchmark table, so the figures trace to the company's own posts. | [AI Weekly summary](https://aiweekly.co/alerts/perplexity-open-sources-27b-decider-edges-jev-on-11-test-panel); the [model card](https://huggingface.co/perplexity-ai/pplx-decider-v1-27b) also shows these scores |
 | **Strands Decider** (AWS, 01 Oct 2026) | JevBench v1 public set (231 tasks): accuracy 0.723 (167/231); Brier 0.342, ECE 0.052. Answers at confidence ≥0.9 are right about 95% of the time on unseen short classification tasks. Latency on an RTX 3090 (WSL2): 115 ms median / 299 ms p95. The blog ranks it 3rd of 33 in the 2B class on accuracy and 1st of 30 on calibration excluding just-over-2B models. | [Repo README](https://github.com/strands-labs/strands-decider), [blog](https://strandsagents.com/blog/introducing-strands-decider/) |
@@ -44,7 +44,7 @@ Patterns worth noting:
 
 - **Every vendor reports beating Jev on its own panel**, by 1.2 points (Perplexity) to 6.9 points (Fastino). Each panel was chosen by the vendor.
 - **Jev still wins some tasks** in two vendor tables (When2Call and BRIGHT in Cloudflare's; 4 of 11 in Perplexity's), so a single "best model" is unlikely.
-- **Cost:** Jev was $0.042 / M input tokens at launch ([Willison](https://simonwillison.net/2026/Sep/21/jev/)); Perplexity charges $0.04 / M ([AI Weekly](https://aiweekly.co/alerts/perplexity-open-sources-27b-decider-edges-jev-on-11-test-panel)). Cloudflare's post gives no pricing, and I found no cited source for claims that Jev is 2–6× cheaper per token.
+- **Cost:** Jev was $0.042 / M input tokens at launch ([Willison](https://simonwillison.net/2026/Sep/21/jev/)); Perplexity charges $0.04 / M ([AI Weekly](https://aiweekly.co/alerts/perplexity-open-sources-27b-decider-edges-jev-on-11-test-panel)). Cloudflare's post gives no pricing, and no cited source was found for claims that Jev is 2–6× cheaper per token.
 
 ## Broad independent evaluation
 
@@ -58,7 +58,7 @@ Patterns worth noting:
 | Laya's own docs say both checkpoints **ship over-confident** and need temperature fitting | [BENCHMARKS.md](https://github.com/NandhaKishorM/laya/blob/main/BENCHMARKS.md) |
 | The frozen escalation gate beat random escalation but **missed its 10% accepted-error target** | [2609.33843](https://arxiv.org/abs/2609.33843) |
 | layaAgent at its tuned gate decides 32% of steps alone at 9.8% error; `goal_met` AUROC 0.71. Thresholds were chosen on a 36-task dev split, a small sample | [layaAgent README](https://github.com/vishalmysore/layaAgent) |
-| Independent OOD calibration test: 900 rule-generated tickets plus 3 public benchmarks | [jev-ood-calibration](https://github.com/scienthoon/jev-ood-calibration) (not run by me) |
+| Independent OOD calibration test: 900 rule-generated tickets plus 3 public benchmarks | [jev-ood-calibration](https://github.com/scienthoon/jev-ood-calibration) (not run) |
 
 The first two rows disagree on the direction of miscalibration. That may come from different checkpoints or data, so measure on your own data.
 
@@ -68,7 +68,7 @@ The first two rows disagree on the direction of miscalibration. That may come fr
 
 ## Domain benchmarks
 
-Descriptions are my own words based on each project's own page (as of 04 Oct 2026); I confirmed the links resolve but did not run them. Sources are credited in [REFERENCES.md](REFERENCES.md).
+Descriptions are in original wording based on each project's own page (as of 04 Oct 2026); the links were confirmed to resolve, but the projects were not run. Sources are credited in [REFERENCES.md](REFERENCES.md).
 
 | Benchmark | What it measures |
 |---|---|
@@ -86,10 +86,10 @@ Descriptions are my own words based on each project's own page (as of 04 Oct 202
 
 ## Gaps
 
-Things I could not find measured. Good candidates for contributions:
+Things not found measured. Good candidates for contributions:
 
 - Head-to-head on the **same harness and hardware** across hosted and open models, including the new entrants
-- Calibration **drift** over time or after model updates (jevcal fails CI on this, but I found no published study)
+- Calibration **drift** over time or after model updates (jevcal fails CI on this, but no published study was found)
 - Robustness under **adversarial input**
 - Cost per correct decision, including escalations to an LLM
 - Independent replication of any vendor claim above

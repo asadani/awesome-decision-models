@@ -1,6 +1,6 @@
 # Business & operations
 
-Triage, routing and screening for teams. Descriptions are my own words, based on each project's own GitHub description (as of 04 Oct 2026). Projects were discovered through several lists and searches (see [REFERENCES.md](../REFERENCES.md)). I have not run the tools. The License column is what GitHub reports for each repo, not legal advice.
+Triage, routing and screening for teams. Descriptions are in original wording, based on each project's own GitHub description (as of 04 Oct 2026). Projects were discovered through several lists and searches (see [REFERENCES.md](../REFERENCES.md)). The tools have not been run. The License column is what GitHub reports for each repo, not legal advice.
 
 | Tool | What it does | License |
 |---|---|---|
@@ -17,4 +17,4 @@ Triage, routing and screening for teams. Descriptions are my own words, based on
 
 ## Caution: people decisions
 
-Decision models return probabilities with no explanation, and none of the sources I read audits them for bias in people-related decisions. Simon Willison [describes](https://simonwillison.net/2026/Sep/21/jev/) a one-off experiment where Jev rated Cupertino the best and East Palo Alto the worst Bay Area city on a yes/no "Good city?" question. That is an anecdote, not evidence of bias in hiring. My own suggestion, not a claim from the sources: keep a human in the loop and audit outcomes if you build screening tools.
+Decision models return probabilities with no explanation, and none of the sources reviewed audits them for bias in people-related decisions. Simon Willison [describes](https://simonwillison.net/2026/Sep/21/jev/) a one-off experiment where Jev rated Cupertino the best and East Palo Alto the worst Bay Area city on a yes/no "Good city?" question. That is an anecdote, not evidence of bias in hiring. Suggestion, not a claim from the sources: keep a human in the loop and audit outcomes if you build screening tools.

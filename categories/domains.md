@@ -10,7 +10,7 @@ High-stakes areas. Calibration and human oversight matter far more here than spe
 | [jev_stock](https://github.com/sosopop/jev_stock) | Experimental framework for forecasting short-term stock direction from structured market data | none stated |
 | [jev-trade](https://github.com/aowang-ai/jev-trade) | Live crypto trader on Hyperliquid | unclear |
 
-I have seen no independent evidence that these make money. Treat them as demos.
+No independent evidence that these make money was found. Treat them as demos.
 
 ## Legal
 

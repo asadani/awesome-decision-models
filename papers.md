@@ -1,6 +1,6 @@
 # Papers
 
-arXiv papers on typed decision / System One models, 13 so far, all published Sept 2026. Summaries are paraphrased from the abstracts (I read the arXiv abstract pages, not the full papers). Grouped by theme.
+arXiv papers on typed decision / System One models, 13 so far, all published Sept 2026. Summaries are paraphrased from the abstracts (the arXiv abstract pages were read, not the full papers). Grouped by theme.
 
 ## Evaluation and calibration
 
@@ -63,7 +63,7 @@ Useful background on cascades, the "when to escalate" problem these systems face
 - [Cluster, Route, Escalate: Cascaded Framework for Cost-Aware LLM Serving](https://arxiv.org/abs/2606.27457)
 - [NovaFabric: Tamper-Evident, Replayable Evidence for Autonomous AI Agent Runs](https://arxiv.org/abs/2609.12582)
 
-(Titles confirmed against arXiv; I haven't read these abstracts closely, so how closely they relate is unconfirmed.)
+(Titles confirmed against arXiv; their abstracts were not read closely, so how closely they relate is unconfirmed.)
 
 ## Patterns visible across the papers
 
@@ -75,4 +75,4 @@ Useful background on cascades, the "when to escalate" problem these systems face
 
 ## Not yet covered
 
-Only abstracts have been read, not full texts. Still to add: the RSI-Jev research write-up, and any paper on tool use with decision models (none found). The review at [ArXivIQ](https://arxiviq.substack.com/p/jev-and-the-emergence-of-system-one) surveys several of the papers above and mentions KV-cache sharing for parallel question evaluation and RLCD training for calibration. I haven't checked those claims against the papers.
+Only abstracts have been read, not full texts. Still to add: the RSI-Jev research write-up, and any paper on tool use with decision models (none found). The review at [ArXivIQ](https://arxiviq.substack.com/p/jev-and-the-emergence-of-system-one) surveys several of the papers above and mentions KV-cache sharing for parallel question evaluation and RLCD training for calibration. Those claims have not been checked against the papers.
